@@ -5,6 +5,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 
 import templateRoutes from './routes/template.js';
+import contactRoutes from './routes/contact.js';
 
 dotenv.config();
 
@@ -15,9 +16,19 @@ const PORT = process.env.PORT || 8800;
 app.use(helmet());
 
 // CORS設定
+const allowedOrigins = (process.env.FRONTEND_ORIGIN || 'http://localhost:5100')
+	.split(',')
+	.map((origin) => origin.trim())
+	.filter(Boolean);
+
 app.use(cors({
-	origin: 'http://localhost:5100', // フロントエンドのURL
-	credentials: true, // クッキーを含むリクエストを許可
+	origin: (origin, callback) => {
+		if (!origin || allowedOrigins.includes(origin)) {
+			return callback(null, true);
+		}
+		return callback(new Error('Not allowed by CORS'));
+	},
+	credentials: true,
 	methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 	allowedHeaders: ['Content-Type', 'Authorization']
 }));
@@ -26,8 +37,8 @@ app.use(cors({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// 在庫管理
 app.use('/template', templateRoutes); 
+app.use('/contact', contactRoutes);
 
 // ルーター
 // 管理者用

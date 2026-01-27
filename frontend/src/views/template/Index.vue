@@ -70,7 +70,7 @@ const handleSubmit = async () => {
 				<ul>
 					<li>地元のスーパーや小さなお店</li>
 					<li>中小企業の社長さん・店長さん</li>
-					<li>パソコンや新しいことが苦手な方</li>
+					<li>日々の業務に手いっぱいで、新しい仕組みを考える時間が取れない方</li>
 				</ul>
 			</div>
 		</section>
@@ -99,29 +99,6 @@ const handleSubmit = async () => {
 					<span class="icon">⏱️</span>
 					<h4>毎日の事務が積み重なる</h4>
 					<p>小さな作業が積み重なって残業に。</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="section" id="learn">
-			<div class="section-head">
-				<h3>このサイトで分かること</h3>
-			</div>
-			<div class="grid learn">
-				<div class="panel">
-					<span class="icon">🤝</span>
-					<p class="badge">どんな支え方か</p>
-					<p>道具を売るのではなく、仕事の流れを整えます。</p>
-				</div>
-				<div class="panel">
-					<span class="icon">✨</span>
-					<p class="badge">どこが楽になるか</p>
-					<p>「何が楽になるか」を中心に紹介します。</p>
-				</div>
-				<div class="panel">
-					<span class="icon">🪴</span>
-					<p class="badge">進め方と安心感</p>
-					<p>小さく始めて、様子を見ながら育てます。</p>
 				</div>
 			</div>
 		</section>
@@ -238,32 +215,32 @@ const handleSubmit = async () => {
 
 		<section class="section" id="cases">
 			<div class="section-head">
-				<h3>実績・事例</h3>
+				<h3>想定例</h3>
 			</div>
 			<div class="grid cases">
 				<div class="case">
-					<h4>地元スーパー（複数店舗）</h4>
-					<p>売上のまとめが自動で集まり、閉店後の作業が短くなりました。</p>
+					<h4>複数店舗の売上共有</h4>
+					<p>売上のまとめが自動で集まり、閉店後の作業を短くすることができます。</p>
 				</div>
 				<div class="case">
-					<h4>地元スーパー（複数店舗）</h4>
-					<p>在庫の見え方が整い、発注の不安が減りました。</p>
+					<h4>在庫管理の電子化、自動化</h4>
+					<p>在庫の見え方を整えることで、発注時の不安を減らすことができます。</p>
 				</div>
 				<div class="case">
-					<h4>地元スーパー（複数店舗）</h4>
-					<p>報告書づくりが早く終わり、店長の負担が軽くなりました。</p>
+					<h4>報告書作成の支援アプリ導入</h4>
+					<p>報告書づくりを効率化し、負担を軽くすることができます。</p>
 				</div>
 			</div>
 		</section>
 
 		<section class="section" id="profile">
 			<div class="section-head">
-				<h3>自己紹介</h3>
+				<h3>大切にしていること</h3>
 			</div>
 			<div class="profile">
 				<div class="profile-card">
 					<p class="badge">地元で活動</p>
-					<p>地域の現場に寄りそい、顔が見える距離でお手伝いします。</p>
+					<p>地域の現場に寄りそい、状況に合わせて柔軟にサポートします</p>
 				</div>
 				<div class="profile-card">
 					<p class="badge">現場目線</p>
@@ -283,7 +260,7 @@ const handleSubmit = async () => {
 			<div class="faq">
 				<div class="qa">
 					<h4>ITが苦手でも大丈夫ですか？</h4>
-					<p>大丈夫です。むずかしい言葉は使わず、ゆっくり説明します。</p>
+					<p>大丈夫です。難しい言葉は使わず、しっかりと説明します。</p>
 				</div>
 				<div class="qa">
 					<h4>小規模でも依頼できますか？</h4>
@@ -307,7 +284,7 @@ const handleSubmit = async () => {
 						まずは話して、気持ちが楽になるかどうかを確かめてください。
 					</p>
 					<ul>
-						<li>「今の作業を軽くしたい」だけでもOK</li>
+						<li>「この作業を楽にしたい」だけでもOK</li>
 						<li>相談だけでもOK</li>
 						<li>小さく始めたい、も大歓迎</li>
 					</ul>
@@ -316,7 +293,7 @@ const handleSubmit = async () => {
 					<div class="contact-row">
 						<label>
 							お店・会社名
-							<input v-model.trim="form.company" type="text" placeholder="〇〇スーパー" autocomplete="organization" required />
+							<input v-model.trim="form.company" type="text" placeholder="株式会社○○" autocomplete="organization" required />
 						</label>
 						<label>
 							お名前
@@ -340,6 +317,37 @@ const handleSubmit = async () => {
 				</form>
 			</div>
 		</section>
+
+		<section class="section" id="privacy">
+			<div class="section-head">
+				<h3>プライバシーポリシー</h3>
+				<p>お客様の情報を安心してお預けいただくための方針です。</p>
+			</div>
+			<div class="panel privacy-card">
+				<h4>個人情報の取り扱いについて</h4>
+				<p>
+					お問い合わせでお預かりした情報は、返信やご連絡の目的にのみ使用し、
+					目的外での利用は行いません。
+				</p>
+				<h4>第三者提供について</h4>
+				<p>
+					法令に基づく場合を除き、ご本人の同意なく第三者へ提供することはありません。
+				</p>
+				<h4>管理体制</h4>
+				<p>
+					個人情報への不正アクセスや漏えいを防ぐため、適切な管理を行います。
+				</p>
+				<h4>お問い合わせ</h4>
+				<p>内容の確認や削除のご希望があれば、お問い合わせフォームよりご連絡ください。</p>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer-inner">
+				<p>© 2026 地元のお店・会社サポート</p>
+				<a href="#privacy">プライバシーポリシー</a>
+			</div>
+		</footer>
 	</main>
 </template>
 
@@ -411,6 +419,11 @@ const handleSubmit = async () => {
 	background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
 	box-shadow: var(--shadow);
 	animation: fadeUp 0.8s ease both;
+}
+
+.hero,
+.section {
+	scroll-margin-top: 88px;
 }
 
 .eyebrow {
@@ -521,7 +534,7 @@ const handleSubmit = async () => {
 .section-head h3 {
 	font-family: "BIZ UDPGothic", "Noto Sans JP", "Hiragino Sans", sans-serif;
 	font-size: clamp(22px, 3vw, 30px);
-	margin: 0 0 8px;
+	margin: 0 0 18px;
 }
 
 .section-head p {
@@ -740,6 +753,46 @@ const handleSubmit = async () => {
 	color: #15803d;
 }
 
+.privacy-card h4 {
+	margin: 18px 0 8px;
+	font-size: 15px;
+}
+
+.privacy-card h4:first-of-type {
+	margin-top: 0;
+}
+
+.privacy-card p {
+	color: var(--sub);
+	line-height: 1.8;
+}
+
+.footer {
+	margin-top: 48px;
+	padding: 24px 0 0;
+	border-top: 1px solid var(--line);
+}
+
+.footer-inner {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px 20px;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 13px;
+	color: var(--muted);
+}
+
+.footer a {
+	color: var(--brand-dark);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
 @keyframes fadeUp {
 	from {
 		opacity: 0;
@@ -753,7 +806,7 @@ const handleSubmit = async () => {
 
 @media (max-width: 720px) {
 	.page {
-		padding: 56px 20px 84px;
+		padding: 110px 20px 84px;
 	}
 
 	.hero {
@@ -775,6 +828,32 @@ const handleSubmit = async () => {
 
 	.contact-row {
 		grid-template-columns: 1fr;
+	}
+
+	.contact {
+		padding: 24px;
+	}
+
+	.contact-text {
+		display: none;
+	}
+
+	.contact-form label {
+		font-size: 12px;
+	}
+
+	.contact-form input,
+	.contact-form textarea {
+		font-size: 13px;
+	}
+
+	.form-note {
+		font-size: 11px;
+	}
+
+	.footer-inner {
+		flex-direction: column;
+		align-items: flex-start;
 	}
 }
 </style>

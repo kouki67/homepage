@@ -10,7 +10,7 @@
 				<a href="#services">サービス</a>
 				<a href="#flow">流れ</a>
 				<a href="#pricing">料金</a>
-				<a href="#cases">事例</a>
+				<a href="#cases">想定例</a>
 				<a href="#contact" class="cta">相談</a>
 			</nav>
 		</div>
@@ -44,9 +44,9 @@
 h1 {
 	margin: 0;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #111827;
-	font-family: "Shippori Mincho B1", "Hiragino Mincho ProN", serif;
+	font-family: "BIZ UDPGothic", "Noto Sans JP", "Hiragino Sans", sans-serif;
 }
 
 nav {
@@ -57,6 +57,7 @@ nav {
 }
 
 nav a {
+	display: inline-flex;
 	text-decoration: none;
 	color: #4b5563;
 	font-size: 13px;
@@ -86,7 +87,24 @@ nav .cta {
 	}
 
 	nav {
+		width: 100%;
 		gap: 8px;
+	}
+}
+
+@media (max-width: 540px) {
+	h1 {
+		font-size: 16px;
+		line-height: 1.4;
+	}
+
+	.header-inner {
+		padding: 10px 16px;
+	}
+
+	nav a {
+		font-size: 12px;
+		padding: 5px 8px;
 	}
 }
 </style>

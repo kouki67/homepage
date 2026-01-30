@@ -19,7 +19,7 @@ const handleSubmit = async () => {
 	isSubmitting.value = true;
 
 	try {
-		const apiBase = 'http://localhost:3000/api';
+		const apiBase = 'https://kouki067.com/api';
 		const response = await fetch(`${apiBase}/contact`, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },

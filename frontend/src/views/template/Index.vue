@@ -53,295 +53,291 @@ const handleSubmit = async () => {
 <template>
 	<main class="page" id="top">
 		<div class="page-inner">
-		<section class="hero">
-			<div class="hero-text">
-				<p class="eyebrow">地元のお店・会社のための</p>
-				<h2>毎日の仕事が、<span class="hero-line">少しずつ楽になる</span></h2>
-				<p class="lead">
-					「売上や在庫のまとめ」「報告書づくり」「発注」など、
-					繰り返す作業を、わかりやすいしくみで支えます。
-				</p>
-				<div class="hero-actions">
-					<a class="btn primary" href="#contact">相談してみる</a>
-					<a class="btn ghost" href="#services">できることを見る</a>
-				</div>
-			</div>
-			<div class="hero-card">
-				<p class="card-title">こんな方に向いています</p>
-				<ul>
-					<li>地元のスーパーや小さなお店</li>
-					<li>中小企業の社長さん・店長さん</li>
-					<li>日々の業務に手いっぱいで、新しい仕組みを考える時間が取れない方</li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="section" id="worries">
-			<div class="section-head">
-				<h3>よくある悩み</h3>
-			</div>
-			<div class="grid worries">
-				<div class="panel">
-					<span class="icon">📊</span>
-					<h4>売上や在庫をまとめるのが大変</h4>
-					<p>数字を集めるだけで時間がかかる。</p>
-				</div>
-				<div class="panel">
-					<span class="icon">📝</span>
-					<h4>報告書づくりが毎回しんどい</h4>
-					<p>日報・週報・月報が後回しになる。</p>
-				</div>
-				<div class="panel">
-					<span class="icon">🧾</span>
-					<h4>発注のミスが心配</h4>
-					<p>忙しいと見落としが出てしまう。</p>
-				</div>
-				<div class="panel">
-					<span class="icon">⏱️</span>
-					<h4>毎日の事務が積み重なる</h4>
-					<p>小さな作業が積み重なって残業に。</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="section" id="services">
-			<div class="section-head">
-				<h3>サービス内容</h3>
-			</div>
-			<div class="grid services">
-				<div class="card">
-					<h4>売上・在庫のまとめが自動で進む</h4>
-					<p>数字を手で集める時間が減り、確認だけで済みます。</p>
-				</div>
-				<div class="card">
-					<h4>日報・週報・月報がすぐ作れる</h4>
-					<p>必要な数字や内容がまとまり、書く手間が減ります。</p>
-				</div>
-				<div class="card">
-					<h4>発注の見落としが減る</h4>
-					<p>足りないものに気づきやすくなります。</p>
-				</div>
-				<div class="card">
-					<h4>LINE公式アカウントの運用が楽になる</h4>
-					<p>設定や配信の流れを整え、続けやすくします。</p>
-				</div>
-				<div class="card">
-					<h4>毎日・毎週の事務が軽くなる</h4>
-					<p>同じ作業をくり返さずにすみます。</p>
-				</div>
-				<div class="card">
-					<h4>導入後も見守りと改善</h4>
-					<p>入れたままにせず、変化に合わせて整えます。</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="section" id="flow">
-			<div class="section-head">
-				<h3>導入の流れ</h3>
-				<p>初めてでも安心できるように、小さく始めます。</p>
-			</div>
-			<ol class="flow">
-				<li class="panel flow-card">
-					<span class="step">1</span>
-					<div>
-						<h4>相談</h4>
-						<p>今の困りごとを聞きます。</p>
-					</div>
-				</li>
-				<li class="panel flow-card">
-					<span class="step">2</span>
-					<div>
-						<h4>整理</h4>
-						<p>仕事の流れを一緒に整理し、日々の業務を楽にできるポイントを見つけます。</p>
-					</div>
-				</li>
-				<li class="panel flow-card">
-					<span class="step">3</span>
-					<div>
-						<h4>小さく導入</h4>
-						<p>まずは一部だけ試して、安心して進めます。</p>
-					</div>
-				</li>
-				<li class="panel flow-card">
-					<span class="step">4</span>
-					<div>
-						<h4>改善</h4>
-						<p>使ってみた声をもとに、より楽になるよう調整します。</p>
-					</div>
-				</li>
-				<li class="panel flow-card">
-					<span class="step">5</span>
-					<div>
-						<h4>継続</h4>
-						<p>導入後も見守り、困ったときにすぐ対応します。</p>
-					</div>
-				</li>
-			</ol>
-		</section>
-
-		<section class="section" id="pricing">
-			<div class="section-head">
-				<h3>料金について</h3>
-			</div>
-			<div class="pricing-stack">
-				<div class="panel pricing-card">
-					<h4>事前相談</h4>
-					<p class="price">無料</p>
-					<p>楽にしたい業務をお聞きし、どれくらい負担が減るかを分かりやすくお話しします。</p>
-					<p>気になることがあれば、ちょっとしたことでも大丈夫です。</p>
-					<a class="btn ghost pricing-cta" href="#contact">お問い合わせへ</a>
-				</div>
-				<div class="panel pricing-card">
-					<h4>初期導入費（目安）</h4>
-					<p class="price">50,000円 ～ 500,000円</p>
-					<p>ヒアリング・整理／仕組み作成／初期設定・確認。</p>
-					<p>小さな業務1つから対応できます。</p>
-				</div>
-				<div class="panel pricing-card">
-					<h4>月額運用保守（目安）</h4>
-					<p class="price">1店舗あたり 10,000円 ～ 50,000円</p>
-					<p>不具合対応／設定調整／軽微な改善／ご相談。</p>
-					<p>導入後も安心して使えるよう支えます。</p>
-				</div>
-				<div class="panel info-card">
-					<h4>複数店舗・追加のご要望</h4>
-					<p>複数店舗は共通部分をまとめてご提案できます。</p>
-					<p>追加の業務は別途導入費としてご相談します。</p>
-					<p>保守の範囲を無理に広げることはありません。</p>
-				</div>
-			</div>
-			<p class="note">金額は目安です。内容を伺った上で、無理のない形でご提案します。</p>
-		</section>
-
-		<section class="section" id="cases">
-			<div class="section-head">
-				<h3>想定例</h3>
-			</div>
-			<div class="grid cases">
-				<div class="case">
-					<h4>複数店舗の売上共有</h4>
-					<p>売上のまとめが自動で集まり、閉店後の作業を短くすることができます。</p>
-				</div>
-				<div class="case">
-					<h4>在庫管理の電子化、自動化</h4>
-					<p>在庫の見え方を整えることで、発注時の不安を減らすことができます。</p>
-				</div>
-				<div class="case">
-					<h4>報告書作成の支援アプリ導入</h4>
-					<p>報告書づくりを効率化し、負担を軽くすることができます。</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="section" id="profile">
-			<div class="section-head">
-				<h3>大切にしていること</h3>
-			</div>
-			<div class="profile">
-				<div class="profile-card">
-					<p class="badge">地元で活動</p>
-					<p>地域の現場に寄りそい、状況に合わせて柔軟にサポートします</p>
-				</div>
-				<div class="profile-card">
-					<p class="badge">現場目線</p>
-					<p>机の上だけで決めず、実際の流れを大切にします。</p>
-				</div>
-				<div class="profile-card">
-					<p class="badge">導入して終わりにしない</p>
-					<p>使い続ける中で、困りごとに合わせて整えます。</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="section" id="faq">
-			<div class="section-head">
-				<h3>よくある質問</h3>
-			</div>
-			<div class="faq">
-				<div class="qa">
-					<h4>ITが苦手でも大丈夫ですか？</h4>
-					<p>大丈夫です。難しい言葉は使わず、しっかりと説明します。</p>
-				</div>
-				<div class="qa">
-					<h4>小規模でも依頼できますか？</h4>
-					<p>できます。小さな困りごとから始める方が多いです。</p>
-				</div>
-				<div class="qa">
-					<h4>途中で変更できますか？</h4>
-					<p>できます。使いながら一緒に見直します。</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="section contact" id="contact">
-			<div class="section-head">
-				<h3>お問い合わせ</h3>
-			</div>
-			<div class="contact-body">
-				<div class="panel contact-card contact-text">
-					<p>
-						困っていることを、短いメモでOKです。無理に売り込むことはしません。
-						まずは話して、気持ちが楽になるかどうかを確かめてください。
+			<section class="hero">
+				<div class="hero-text">
+					<p class="eyebrow">地元のお店・会社のための</p>
+					<h2>毎日の仕事が、<span class="hero-line">少しずつ楽になる</span></h2>
+					<p class="lead">
+						「売上や在庫のまとめ」「報告書づくり」「発注」など、
+						繰り返す作業を、わかりやすいしくみで支えます。
 					</p>
+					<div class="hero-actions">
+						<a class="btn primary" href="#contact">相談してみる</a>
+						<a class="btn ghost" href="#services">できることを見る</a>
+					</div>
+				</div>
+				<div class="hero-card">
+					<p class="card-title">こんな方に向いています</p>
 					<ul>
-						<li>「この作業を楽にしたい」だけでもOK</li>
-						<li>相談だけでもOK</li>
-						<li>小さく始めたい、も大歓迎</li>
+						<li>地元のスーパーや小さなお店</li>
+						<li>中小企業の社長さん・店長さん</li>
+						<li>日々の業務に手いっぱいで、新しい仕組みを考える時間が取れない方</li>
 					</ul>
 				</div>
-				<form class="panel contact-card contact-form" @submit.prevent="handleSubmit">
-					<div class="contact-row">
-						<label>
-							お店・会社名
-							<input v-model.trim="form.company" type="text" placeholder="株式会社○○" autocomplete="organization" required />
-						</label>
-						<label>
-							お名前
-							<input v-model.trim="form.name" type="text" placeholder="山田 花子" autocomplete="name" required />
-						</label>
-					</div>
-					<label>
-						連絡先（電話 or メール）
-						<input v-model.trim="form.contact" type="text" placeholder="090-0000-0000 / sample@example.com" autocomplete="email" required />
-					</label>
-					<label>
-						相談内容
-						<textarea v-model.trim="form.message" rows="4" placeholder="困っていることを短く書いてください" required></textarea>
-					</label>
-					<button type="submit" class="btn primary" :disabled="isSubmitting">
-						{{ isSubmitting ? '送信中...' : '相談してみる' }}
-					</button>
-					<p v-if="submitError" class="form-note form-note--error">{{ submitError }}</p>
-					<p v-else-if="submitSuccess" class="form-note form-note--success">{{ submitSuccess }}</p>
-					<p v-else class="form-note">※ 送信後、確認してご連絡します。</p>
-				</form>
-			</div>
-		</section>
+			</section>
 
-		<section class="section" id="privacy">
-			<div class="section-head">
-				<h3>プライバシーポリシー</h3>
-				<p>お客様の情報を安心してお預けいただくための方針です。</p>
-			</div>
-			<div class="panel privacy-card">
-				<h4>個人情報の取り扱いについて</h4>
-				<p>
-					お問い合わせでお預かりした情報は、返信やご連絡の目的にのみ使用し、
-					目的外での利用は行いません。
-				</p>
-				<h4>第三者提供について</h4>
-				<p>
-					法令に基づく場合を除き、ご本人の同意なく第三者へ提供することはありません。
-				</p>
-				<h4>管理体制</h4>
-				<p>
-					個人情報への不正アクセスや漏えいを防ぐため、適切な管理を行います。
-				</p>
-				<h4>お問い合わせ</h4>
-				<p>内容の確認や削除のご希望があれば、お問い合わせフォームよりご連絡ください。</p>
-			</div>
-		</section>
+			<section class="section" id="worries">
+				<div class="section-head">
+					<h3>よくある悩み</h3>
+				</div>
+				<div class="grid worries">
+					<div class="panel">
+						<span class="icon">📊</span>
+						<h4>売上や在庫をまとめるのが大変</h4>
+						<p>数字を集めるだけで時間がかかる。</p>
+					</div>
+					<div class="panel">
+						<span class="icon">📝</span>
+						<h4>報告書づくりが毎回しんどい</h4>
+						<p>日報・週報・月報が後回しになる。</p>
+					</div>
+					<div class="panel">
+						<span class="icon">🧾</span>
+						<h4>発注のミスが心配</h4>
+						<p>忙しいと見落としが出てしまう。</p>
+					</div>
+					<div class="panel">
+						<span class="icon">⏱️</span>
+						<h4>毎日の事務が積み重なる</h4>
+						<p>小さな作業が積み重なって残業に。</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="services">
+				<div class="section-head">
+					<h3>サービス内容</h3>
+				</div>
+				<div class="grid services">
+					<div class="card">
+						<h4>売上・在庫のまとめが自動で進む</h4>
+						<p>数字を手で集める時間が減り、確認だけで済みます。</p>
+					</div>
+					<div class="card">
+						<h4>日報・週報・月報がすぐ作れる</h4>
+						<p>必要な数字や内容がまとまり、書く手間が減ります。</p>
+					</div>
+					<div class="card">
+						<h4>発注の見落としが減る</h4>
+						<p>足りないものに気づきやすくなります。</p>
+					</div>
+					<div class="card">
+						<h4>毎日・毎週の事務が軽くなる</h4>
+						<p>同じ作業をくり返さずにすみます。</p>
+					</div>
+					<div class="card">
+						<h4>導入後も見守りと改善</h4>
+						<p>入れたままにせず、変化に合わせて整えます。</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="flow">
+				<div class="section-head">
+					<h3>導入の流れ</h3>
+					<p>初めてでも安心できるように、小さく始めます。</p>
+				</div>
+				<ol class="flow">
+					<li class="panel flow-card">
+						<span class="step">1</span>
+						<div>
+							<h4>相談</h4>
+							<p>今の困りごとを聞きます。</p>
+						</div>
+					</li>
+					<li class="panel flow-card">
+						<span class="step">2</span>
+						<div>
+							<h4>整理</h4>
+							<p>仕事の流れを一緒に整理し、日々の業務を楽にできるポイントを見つけます。</p>
+						</div>
+					</li>
+					<li class="panel flow-card">
+						<span class="step">3</span>
+						<div>
+							<h4>小さく導入</h4>
+							<p>まずは一部だけ試して、安心して進めます。</p>
+						</div>
+					</li>
+					<li class="panel flow-card">
+						<span class="step">4</span>
+						<div>
+							<h4>改善</h4>
+							<p>使ってみた声をもとに、より楽になるよう調整します。</p>
+						</div>
+					</li>
+					<li class="panel flow-card">
+						<span class="step">5</span>
+						<div>
+							<h4>継続</h4>
+							<p>導入後も見守り、困ったときにすぐ対応します。</p>
+						</div>
+					</li>
+				</ol>
+			</section>
+
+			<section class="section" id="pricing">
+				<div class="section-head">
+					<h3>料金について</h3>
+				</div>
+				<div class="pricing-stack">
+					<div class="panel pricing-card">
+						<h4>事前相談</h4>
+						<p class="price">無料</p>
+						<p>楽にしたい業務をお聞きし、どれくらい負担が減るかを分かりやすくお話しします。</p>
+						<p>気になることがあれば、ちょっとしたことでも大丈夫です。</p>
+						<a class="btn ghost pricing-cta" href="#contact">お問い合わせへ</a>
+					</div>
+					<div class="panel pricing-card">
+						<h4>初期導入費（目安）</h4>
+						<p class="price">50,000円 ～ 500,000円</p>
+						<p>ヒアリング・整理／仕組み作成／初期設定・確認。</p>
+						<p>小さな業務1つから対応できます。</p>
+					</div>
+					<div class="panel pricing-card">
+						<h4>月額運用保守（目安）</h4>
+						<p class="price">1店舗あたり 10,000円 ～ 50,000円</p>
+						<p>不具合対応／設定調整／軽微な改善／ご相談。</p>
+						<p>導入後も安心して使えるよう支えます。</p>
+					</div>
+					<div class="panel info-card">
+						<h4>複数店舗・追加のご要望</h4>
+						<p>複数店舗は共通部分をまとめてご提案できます。</p>
+						<p>追加の業務は別途導入費としてご相談します。</p>
+						<p>保守の範囲を無理に広げることはありません。</p>
+					</div>
+				</div>
+				<p class="note">金額は目安です。内容を伺った上で、無理のない形でご提案します。</p>
+			</section>
+
+			<section class="section" id="cases">
+				<div class="section-head">
+					<h3>想定例</h3>
+				</div>
+				<div class="grid cases">
+					<div class="case">
+						<h4>複数店舗の売上共有</h4>
+						<p>売上のまとめが自動で集まり、閉店後の作業を短くすることができます。</p>
+					</div>
+					<div class="case">
+						<h4>在庫管理の電子化、自動化</h4>
+						<p>在庫の見え方を整えることで、発注時の不安を減らすことができます。</p>
+					</div>
+					<div class="case">
+						<h4>報告書作成の支援アプリ導入</h4>
+						<p>報告書づくりを効率化し、負担を軽くすることができます。</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="profile">
+				<div class="section-head">
+					<h3>大切にしていること</h3>
+				</div>
+				<div class="profile">
+					<div class="profile-card">
+						<p class="badge">地元で活動</p>
+						<p>地域の現場に寄りそい、状況に合わせて柔軟にサポートします</p>
+					</div>
+					<div class="profile-card">
+						<p class="badge">現場目線</p>
+						<p>机の上だけで決めず、実際の流れを大切にします。</p>
+					</div>
+					<div class="profile-card">
+						<p class="badge">導入して終わりにしない</p>
+						<p>使い続ける中で、困りごとに合わせて整えます。</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="faq">
+				<div class="section-head">
+					<h3>よくある質問</h3>
+				</div>
+				<div class="faq">
+					<div class="qa">
+						<h4>ITが苦手でも大丈夫ですか？</h4>
+						<p>大丈夫です。難しい言葉は使わず、しっかりと説明します。</p>
+					</div>
+					<div class="qa">
+						<h4>小規模でも依頼できますか？</h4>
+						<p>できます。小さな困りごとから始める方が多いです。</p>
+					</div>
+					<div class="qa">
+						<h4>途中で変更できますか？</h4>
+						<p>できます。使いながら一緒に見直します。</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section contact" id="contact">
+				<div class="section-head">
+					<h3>お問い合わせ</h3>
+				</div>
+				<div class="contact-body">
+					<div class="panel contact-card contact-text">
+						<p>
+							困っていることを、短いメモでOKです。無理に売り込むことはしません。
+							まずは話して、気持ちが楽になるかどうかを確かめてください。
+						</p>
+						<ul>
+							<li>「この作業を楽にしたい」だけでもOK</li>
+							<li>相談だけでもOK</li>
+							<li>小さく始めたい、も大歓迎</li>
+						</ul>
+					</div>
+					<form class="panel contact-card contact-form" @submit.prevent="handleSubmit">
+						<div class="contact-row">
+							<label>
+								お店・会社名
+								<input v-model.trim="form.company" type="text" placeholder="株式会社○○" autocomplete="organization" required />
+							</label>
+							<label>
+								お名前
+								<input v-model.trim="form.name" type="text" placeholder="山田 花子" autocomplete="name" required />
+							</label>
+						</div>
+						<label>
+							連絡先（電話 or メール）
+							<input v-model.trim="form.contact" type="text" placeholder="090-0000-0000 / sample@example.com" autocomplete="email" required />
+						</label>
+						<label>
+							相談内容
+							<textarea v-model.trim="form.message" rows="4" placeholder="困っていることを短く書いてください" required></textarea>
+						</label>
+						<button type="submit" class="btn primary" :disabled="isSubmitting">
+							{{ isSubmitting ? '送信中...' : '相談してみる' }}
+						</button>
+						<p v-if="submitError" class="form-note form-note--error">{{ submitError }}</p>
+						<p v-else-if="submitSuccess" class="form-note form-note--success">{{ submitSuccess }}</p>
+						<p v-else class="form-note">※ 送信後、確認してご連絡します。</p>
+					</form>
+				</div>
+			</section>
+
+			<section class="section" id="privacy">
+				<div class="section-head">
+					<h3>プライバシーポリシー</h3>
+					<p>お客様の情報を安心してお預けいただくための方針です。</p>
+				</div>
+				<div class="panel privacy-card">
+					<h4>個人情報の取り扱いについて</h4>
+					<p>
+						お問い合わせでお預かりした情報は、返信やご連絡の目的にのみ使用し、
+						目的外での利用は行いません。
+					</p>
+					<h4>第三者提供について</h4>
+					<p>
+						法令に基づく場合を除き、ご本人の同意なく第三者へ提供することはありません。
+					</p>
+					<h4>管理体制</h4>
+					<p>
+						個人情報への不正アクセスや漏えいを防ぐため、適切な管理を行います。
+					</p>
+					<h4>お問い合わせ</h4>
+					<p>内容の確認や削除のご希望があれば、お問い合わせフォームよりご連絡ください。</p>
+				</div>
+			</section>
 
 			<footer class="footer">
 				<div class="footer-inner">

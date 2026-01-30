@@ -24,11 +24,15 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
 	width: 100%;
+	max-width: 100%;
 	z-index: 10;
 	background: rgba(255, 255, 255, 0.92);
 	backdrop-filter: blur(12px);
 	border-bottom: 1px solid #e5e7eb;
+	overflow-x: hidden;
+	box-sizing: border-box;
 }
 
 .header-inner {
@@ -38,7 +42,9 @@
 	gap: 16px;
 	margin: 0 auto;
 	padding: 12px 20px;
-	max-width: 1200px;
+	max-width: 1120px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 h1 {

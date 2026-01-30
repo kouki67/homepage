@@ -52,6 +52,7 @@ const handleSubmit = async () => {
 
 <template>
 	<main class="page" id="top">
+		<div class="page-inner">
 		<section class="hero">
 			<div class="hero-text">
 				<p class="eyebrow">地元のお店・会社のための</p>
@@ -342,19 +343,22 @@ const handleSubmit = async () => {
 			</div>
 		</section>
 
-		<footer class="footer">
-			<div class="footer-inner">
-				<p>© 2026 地元のお店・会社サポート</p>
-				<a href="#privacy">プライバシーポリシー</a>
-			</div>
-		</footer>
+			<footer class="footer">
+				<div class="footer-inner">
+					<p>© 2026 地元のお店・会社サポート</p>
+					<a href="#privacy">プライバシーポリシー</a>
+				</div>
+			</footer>
+		</div>
 	</main>
 </template>
 
 <style scoped lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap");
+:global(html),
 :global(body) {
 	background: #f4f5f7;
+	overflow-x: hidden;
 }
 
 .page {
@@ -369,6 +373,8 @@ const handleSubmit = async () => {
 	--shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
 	--header-h: 64px;
 	min-height: 100vh;
+	width: 100%;
+	max-width: 100%;
 	padding: 88px 32px 120px;
 	font-family: "BIZ UDPGothic", "Noto Sans JP", "Hiragino Sans", sans-serif;
 	color: var(--ink);
@@ -378,6 +384,13 @@ const handleSubmit = async () => {
 		radial-gradient(circle at 15% 10%, #fff7ed 0%, #f4f5f7 45%, #edf2f7 100%);
 	position: relative;
 	isolation: isolate;
+	overflow-x: hidden;
+}
+
+.page-inner {
+	width: 100%;
+	max-width: 1120px;
+	margin: 0 auto;
 }
 
 .page::before,

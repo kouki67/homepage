@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import TemplateLayout from '../layouts/template.vue';
 
 //エラー
-import NotFountError from '../views/errors/NotFoundError.vue';
+// import NotFountError from '../views/errors/NotFoundError.vue';
 
 const routes = [
 	{
@@ -22,8 +22,7 @@ const routes = [
 	{
 		// 404エラー
 		path: '/:catchAll(.*)',
-		name: 'NotFoundError',
-		component: NotFountError,
+		redirect: '/',
 	},
 ];
 

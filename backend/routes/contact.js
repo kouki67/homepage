@@ -32,7 +32,6 @@ const isBlank = (value) => typeof value !== 'string' || value.trim().length === 
 const safeTrim = (value, max) => value.trim().slice(0, max);
 
 router.post('/', async (req, res) => {
-	console.log("到達");
 	const ip = getClientIp(req);
 	if (isRateLimited(ip)) {
 		return res.status(429).json({ message: '送信回数が多いため、時間をおいてお試しください。' });

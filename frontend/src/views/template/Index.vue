@@ -19,7 +19,7 @@ const handleSubmit = async () => {
 	isSubmitting.value = true;
 
 	try {
-		const apiBase = import.meta.env.VITE_API_BASE || 'http://localhost:8800';
+		const apiBase = 'http://localhost:3000/api';
 		const response = await fetch(`${apiBase}/contact`, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },

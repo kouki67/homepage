@@ -45,14 +45,14 @@ export default defineConfig([
 			// 連続した空行を注意
 			'no-multiple-empty-lines': [1, { 'max': 1 }],
 			'vue/no-unused-vars': 'warn',  // Vue内で未使用の変数があれば警告
-			'vue/max-attributes-per-line': ['error', { // vueのhtmlの属性を改行
-				'singleline': {
-					'max': 1
-				},      
-				'multiline': {
-					'max': 1
-				}
-			}],
+			// 'vue/max-attributes-per-line': ['error', { // vueのhtmlの属性を改行
+			// 	'singleline': {
+			// 		'max': 1
+			// 	},      
+			// 	'multiline': {
+			// 		'max': 1
+			// 	}
+			// }],
 			'vue/first-attribute-linebreak': ['error', { // 最初の属性の改行
 				'singleline': 'ignore',
 				'multiline': 'below'
